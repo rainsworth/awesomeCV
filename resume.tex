@@ -1,0 +1,99 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-darknight}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{etaremune}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Dr. Rachael E. }{Ainsworth}
+\position{Research Associate in Long Baseline Radio Interferometry \quad\textbar\quad JBCA-ICE Open Science Champion}%{\enskip\cdotp\enskip}Security Expert}
+\address{Jodrell Bank Centre for Astrophysics, School of Physics and Astronomy, The University of Manchester \\ Alan Turing Building, Oxford Road, Manchester, M13 9PL}
+%\mobile{(+353) 86-033-6758} 
+%%% Social
+\email{rainswor@gmail.com}
+\homepage{rachaelainsworth.wordpress.com}
+\github{rainsworth}
+\linkedin{rachaelainsworth}
+\twitter{rachaelevelyn}
+%%% Optionals
+%\quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {R. E. Ainsworth~~~·~~~CV}
+  {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{experience.tex}
+%\import{\sectiondir}{extracurricular.tex}
+\clearpage
+\import{\sectiondir}{publications.tex}
+\import{\sectiondir}{presentations.tex}
+\import{\sectiondir}{teaching.tex}
+\clearpage
+\import{\sectiondir}{observing.tex}
+\import{\sectiondir}{computing.tex}
+\import{\sectiondir}{honors.tex}
+\import{\sectiondir}{outreach.tex}
+\import{\sectiondir}{references.tex}
+
+\end{document}
